@@ -63,7 +63,7 @@ export default function Home() {
             Sistem Pendukung Keputusan · Metode Weighted Scoring
           </p>
           <p className="text-xs text-muted font-mono">
-            4 kriteria · 30 produk · 2026
+            4 kriteria · 42 produk · 2026
           </p>
         </div>
       </footer>

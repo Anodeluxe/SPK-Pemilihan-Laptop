@@ -572,5 +572,235 @@ export const products: Product[] = [
     rating: 4.5,
     warranty: 1,
     powerUsage: 45
+  },
+
+  // ── PCMag / Tom's Hardware / Wirecutter picks ────────────────────────────
+  {
+    id: 31,
+    name: "MacBook Air M3 13\"",
+    price: 20.0,
+    cpu: "high",
+    ram: 16,
+    storage: "ssd",
+    vga: "integrated",
+    specs: {
+      cpu: "Apple M3",
+      ram: "16GB Unified Memory",
+      storage: "512GB SSD",
+      vga: "10-Core GPU",
+      powerUsage: 15
+    },
+    rating: 4.8,
+    warranty: 1,
+    powerUsage: 15
+  },
+  {
+    id: 32,
+    name: "Microsoft Surface Laptop 5 15\"",
+    price: 20.0,
+    cpu: "high",
+    ram: 16,
+    storage: "ssd",
+    vga: "integrated",
+    specs: {
+      cpu: "Intel Core i7-1265U",
+      ram: "16GB LPDDR5x",
+      storage: "512GB SSD",
+      vga: "Intel Iris Xe",
+      powerUsage: 25
+    },
+    rating: 4.5,
+    warranty: 1,
+    powerUsage: 25
+  },
+  {
+    id: 33,
+    name: "HP Spectre x360 14\"",
+    price: 21.5,
+    cpu: "high",
+    ram: 16,
+    storage: "nvme",
+    vga: "integrated",
+    specs: {
+      cpu: "Intel Core Ultra 7 155H",
+      ram: "16GB LPDDR5",
+      storage: "512GB NVMe SSD",
+      vga: "Intel Arc Graphics",
+      powerUsage: 28
+    },
+    rating: 4.6,
+    warranty: 1,
+    powerUsage: 28
+  },
+  {
+    id: 34,
+    name: "ASUS Zenbook 14 OLED",
+    price: 13.9,
+    cpu: "high",
+    ram: 16,
+    storage: "ssd",
+    vga: "integrated",
+    specs: {
+      cpu: "Intel Core Ultra 7 155H",
+      ram: "16GB LPDDR5",
+      storage: "512GB SSD",
+      vga: "Intel Arc Graphics",
+      powerUsage: 25
+    },
+    rating: 4.5,
+    warranty: 1,
+    powerUsage: 25
+  },
+  {
+    id: 35,
+    name: "Dell XPS 15 9530",
+    price: 23.0,
+    cpu: "high",
+    ram: 16,
+    storage: "nvme",
+    vga: "mid",
+    specs: {
+      cpu: "Intel Core i7-13700H",
+      ram: "16GB DDR5",
+      storage: "512GB NVMe SSD",
+      vga: "Nvidia RTX 4060 (8GB)",
+      powerUsage: 130
+    },
+    rating: 4.7,
+    warranty: 1,
+    powerUsage: 130
+  },
+  {
+    id: 36,
+    name: "Framework Laptop 13 (AMD)",
+    price: 16.2,
+    cpu: "high",
+    ram: 16,
+    storage: "nvme",
+    vga: "integrated",
+    specs: {
+      cpu: "AMD Ryzen 7 7840U",
+      ram: "16GB DDR5",
+      storage: "512GB NVMe SSD",
+      vga: "AMD Radeon 780M",
+      powerUsage: 28
+    },
+    rating: 4.4,
+    warranty: 1,
+    powerUsage: 28
+  },
+  {
+    id: 37,
+    name: "Lenovo Yoga 9i 14\"",
+    price: 21.5,
+    cpu: "high",
+    ram: 16,
+    storage: "nvme",
+    vga: "integrated",
+    specs: {
+      cpu: "Intel Core Ultra 7 155H",
+      ram: "16GB LPDDR5",
+      storage: "512GB NVMe SSD",
+      vga: "Intel Arc Graphics",
+      powerUsage: 30
+    },
+    rating: 4.6,
+    warranty: 1,
+    powerUsage: 30
+  },
+  {
+    id: 38,
+    name: "Samsung Galaxy Book4 Pro 16\"",
+    price: 22.0,
+    cpu: "high",
+    ram: 16,
+    storage: "nvme",
+    vga: "integrated",
+    specs: {
+      cpu: "Intel Core Ultra 7 155H",
+      ram: "16GB LPDDR5",
+      storage: "512GB NVMe SSD",
+      vga: "Intel Arc Graphics",
+      powerUsage: 25
+    },
+    rating: 4.6,
+    warranty: 1,
+    powerUsage: 25
+  },
+  {
+    id: 39,
+    name: "HP Omen 16",
+    price: 17.0,
+    cpu: "high",
+    ram: 16,
+    storage: "ssd",
+    vga: "mid",
+    specs: {
+      cpu: "AMD Ryzen 7 7745HX",
+      ram: "16GB DDR5",
+      storage: "512GB SSD",
+      vga: "Nvidia RTX 4060 (8GB)",
+      powerUsage: 140
+    },
+    rating: 4.5,
+    warranty: 1,
+    powerUsage: 140
+  },
+  {
+    id: 40,
+    name: "Lenovo Legion Pro 5i Gen 8",
+    price: 20.0,
+    cpu: "high",
+    ram: 16,
+    storage: "ssd",
+    vga: "mid",
+    specs: {
+      cpu: "Intel Core i7-13700HX",
+      ram: "16GB DDR5",
+      storage: "512GB SSD",
+      vga: "Nvidia RTX 4060 (8GB)",
+      powerUsage: 165
+    },
+    rating: 4.7,
+    warranty: 1,
+    powerUsage: 165
+  },
+  {
+    id: 41,
+    name: "ASUS ROG Zephyrus G16 2024",
+    price: 29.5,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "high",
+    specs: {
+      cpu: "Intel Core Ultra 9 185H",
+      ram: "32GB DDR5",
+      storage: "1TB NVMe SSD",
+      vga: "Nvidia RTX 4090 (16GB)",
+      powerUsage: 175
+    },
+    rating: 4.8,
+    warranty: 2,
+    powerUsage: 175
+  },
+  {
+    id: 42,
+    name: "Dell XPS 14 9440",
+    price: 20.0,
+    cpu: "high",
+    ram: 16,
+    storage: "nvme",
+    vga: "entry",
+    specs: {
+      cpu: "Intel Core Ultra 7 155H",
+      ram: "16GB LPDDR5",
+      storage: "512GB NVMe SSD",
+      vga: "Nvidia RTX 4050 (6GB)",
+      powerUsage: 60
+    },
+    rating: 4.6,
+    warranty: 1,
+    powerUsage: 60
   }
 ];
