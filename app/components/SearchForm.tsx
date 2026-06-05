@@ -53,9 +53,24 @@ export default function SearchForm({ onSearch }: SearchFormProps) {
           <label className={labelClass} htmlFor="budget">
             Budget Maksimal
           </label>
-          <span className="text-sm font-mono font-semibold text-accent">
-            Rp {filters.budget}jt
-          </span>
+          <div className="flex items-center gap-0.5 text-accent">
+            <span className="text-sm font-mono">Rp</span>
+            <input
+              type="number"
+              min="3"
+              max="30"
+              step="0.5"
+              value={filters.budget}
+              onChange={e => {
+                const val = parseFloat(e.target.value);
+                if (!isNaN(val)) {
+                  setFilters(prev => ({ ...prev, budget: Math.min(30, Math.max(3, val)) }));
+                }
+              }}
+              className="w-14 text-sm font-mono font-semibold text-accent text-center bg-transparent border-b border-accent/40 focus-visible:outline-none focus-visible:border-accent transition-colors duration-150"
+            />
+            <span className="text-sm font-mono">jt</span>
+          </div>
         </div>
         <input
           id="budget"

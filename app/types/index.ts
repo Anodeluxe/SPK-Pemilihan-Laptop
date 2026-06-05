@@ -18,6 +18,8 @@ export interface Product {
   rating: number;
   warranty: number;
   powerUsage: number;
+  image?: string;
+  isCustom?: boolean;
 }
 
 export interface RecommendationResult extends Product {

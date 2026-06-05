@@ -18,7 +18,8 @@ export const products: Product[] = [
     },
     rating: 4.5,
     warranty: 2,
-    powerUsage: 20
+    powerUsage: 20,
+    image: "https://picsum.photos/seed/laptop1/400/300"
   },
   {
     id: 2,
@@ -37,7 +38,8 @@ export const products: Product[] = [
     },
     rating: 4.2,
     warranty: 1,
-    powerUsage: 25
+    powerUsage: 25,
+    image: "https://picsum.photos/seed/laptop2/400/300"
   },
   {
     id: 3,
@@ -56,7 +58,8 @@ export const products: Product[] = [
     },
     rating: 4.7,
     warranty: 1,
-    powerUsage: 35
+    powerUsage: 35,
+    image: "https://picsum.photos/seed/laptop3/400/300"
   },
   {
     id: 4,
@@ -75,7 +78,8 @@ export const products: Product[] = [
     },
     rating: 4.3,
     warranty: 2,
-    powerUsage: 22
+    powerUsage: 22,
+    image: "https://picsum.photos/seed/laptop4/400/300"
   },
   {
     id: 5,
@@ -94,7 +98,8 @@ export const products: Product[] = [
     },
     rating: 4.4,
     warranty: 2,
-    powerUsage: 90
+    powerUsage: 90,
+    image: "https://picsum.photos/seed/laptop5/400/300"
   },
   {
     id: 6,
@@ -113,7 +118,8 @@ export const products: Product[] = [
     },
     rating: 4.6,
     warranty: 2,
-    powerUsage: 120
+    powerUsage: 120,
+    image: "https://picsum.photos/seed/laptop6/400/300"
   },
   {
     id: 7,
@@ -132,7 +138,8 @@ export const products: Product[] = [
     },
     rating: 4.1,
     warranty: 1,
-    powerUsage: 21
+    powerUsage: 21,
+    image: "https://picsum.photos/seed/laptop7/400/300"
   },
   {
     id: 8,
@@ -151,7 +158,8 @@ export const products: Product[] = [
     },
     rating: 4.8,
     warranty: 1,
-    powerUsage: 18
+    powerUsage: 18,
+    image: "https://picsum.photos/seed/laptop8/400/300"
   },
   {
     id: 9,
@@ -170,7 +178,8 @@ export const products: Product[] = [
     },
     rating: 3.9,
     warranty: 1,
-    powerUsage: 18
+    powerUsage: 18,
+    image: "https://picsum.photos/seed/laptop9/400/300"
   },
   {
     id: 10,
@@ -189,7 +198,8 @@ export const products: Product[] = [
     },
     rating: 4.9,
     warranty: 3,
-    powerUsage: 200
+    powerUsage: 200,
+    image: "https://picsum.photos/seed/laptop10/400/300"
   },
   {
     id: 11,
@@ -208,7 +218,8 @@ export const products: Product[] = [
     },
     rating: 4.5,
     warranty: 2,
-    powerUsage: 26
+    powerUsage: 26,
+    image: "https://picsum.photos/seed/laptop11/400/300"
   },
   {
     id: 12,
@@ -227,7 +238,8 @@ export const products: Product[] = [
     },
     rating: 4.7,
     warranty: 1,
-    powerUsage: 19
+    powerUsage: 19,
+    image: "https://picsum.photos/seed/laptop12/400/300"
   },
   {
     id: 13,
@@ -246,7 +258,8 @@ export const products: Product[] = [
     },
     rating: 4.4,
     warranty: 3,
-    powerUsage: 24
+    powerUsage: 24,
+    image: "https://picsum.photos/seed/laptop13/400/300"
   },
   {
     id: 14,
@@ -265,7 +278,8 @@ export const products: Product[] = [
     },
     rating: 4.8,
     warranty: 2,
-    powerUsage: 180
+    powerUsage: 180,
+    image: "https://picsum.photos/seed/laptop14/400/300"
   },
   {
     id: 15,
@@ -284,7 +298,8 @@ export const products: Product[] = [
     },
     rating: 4.5,
     warranty: 2,
-    powerUsage: 28
+    powerUsage: 28,
+    image: "https://picsum.photos/seed/laptop15/400/300"
   },
   {
     id: 16,
@@ -303,7 +318,8 @@ export const products: Product[] = [
     },
     rating: 4.2,
     warranty: 1,
-    powerUsage: 23
+    powerUsage: 23,
+    image: "https://picsum.photos/seed/laptop16/400/300"
   },
   {
     id: 17,
@@ -322,7 +338,8 @@ export const products: Product[] = [
     },
     rating: 4.6,
     warranty: 1,
-    powerUsage: 20
+    powerUsage: 20,
+    image: "https://picsum.photos/seed/laptop17/400/300"
   },
   {
     id: 18,
@@ -341,7 +358,8 @@ export const products: Product[] = [
     },
     rating: 4.5,
     warranty: 2,
-    powerUsage: 21
+    powerUsage: 21,
+    image: "https://picsum.photos/seed/laptop18/400/300"
   },
 
   // ── Tambahan produk ─────────────────────────────────────────────────────
@@ -362,7 +380,8 @@ export const products: Product[] = [
     },
     rating: 3.8,
     warranty: 1,
-    powerUsage: 15
+    powerUsage: 15,
+    image: "https://picsum.photos/seed/laptop19/400/300"
   },
   {
     id: 20,
@@ -381,7 +400,8 @@ export const products: Product[] = [
     },
     rating: 3.6,
     warranty: 1,
-    powerUsage: 15
+    powerUsage: 15,
+    image: "https://picsum.photos/seed/laptop20/400/300"
   },
   {
     id: 21,
@@ -400,7 +420,8 @@ export const products: Product[] = [
     },
     rating: 4.3,
     warranty: 2,
-    powerUsage: 22
+    powerUsage: 22,
+    image: "https://picsum.photos/seed/laptop21/400/300"
   },
   {
     id: 22,
@@ -419,7 +440,8 @@ export const products: Product[] = [
     },
     rating: 4.3,
     warranty: 1,
-    powerUsage: 95
+    powerUsage: 95,
+    image: "https://picsum.photos/seed/laptop22/400/300"
   },
   {
     id: 23,
@@ -438,7 +460,8 @@ export const products: Product[] = [
     },
     rating: 4.2,
     warranty: 1,
-    powerUsage: 80
+    powerUsage: 80,
+    image: "https://picsum.photos/seed/laptop23/400/300"
   },
   {
     id: 24,
@@ -457,7 +480,8 @@ export const products: Product[] = [
     },
     rating: 4.9,
     warranty: 2,
-    powerUsage: 100
+    powerUsage: 100,
+    image: "https://picsum.photos/seed/laptop24/400/300"
   },
   {
     id: 25,
@@ -476,7 +500,8 @@ export const products: Product[] = [
     },
     rating: 4.6,
     warranty: 1,
-    powerUsage: 130
+    powerUsage: 130,
+    image: "https://picsum.photos/seed/laptop25/400/300"
   },
   {
     id: 26,
@@ -495,7 +520,8 @@ export const products: Product[] = [
     },
     rating: 4.4,
     warranty: 1,
-    powerUsage: 125
+    powerUsage: 125,
+    image: "https://picsum.photos/seed/laptop26/400/300"
   },
   {
     id: 27,
@@ -514,7 +540,8 @@ export const products: Product[] = [
     },
     rating: 4.9,
     warranty: 1,
-    powerUsage: 20
+    powerUsage: 20,
+    image: "https://picsum.photos/seed/laptop27/400/300"
   },
   {
     id: 28,
@@ -533,7 +560,8 @@ export const products: Product[] = [
     },
     rating: 4.7,
     warranty: 3,
-    powerUsage: 17
+    powerUsage: 17,
+    image: "https://picsum.photos/seed/laptop28/400/300"
   },
   {
     id: 29,
@@ -552,7 +580,8 @@ export const products: Product[] = [
     },
     rating: 4.7,
     warranty: 2,
-    powerUsage: 150
+    powerUsage: 150,
+    image: "https://picsum.photos/seed/laptop29/400/300"
   },
   {
     id: 30,
@@ -571,7 +600,8 @@ export const products: Product[] = [
     },
     rating: 4.5,
     warranty: 1,
-    powerUsage: 45
+    powerUsage: 45,
+    image: "https://picsum.photos/seed/laptop30/400/300"
   },
 
   // ── PCMag / Tom's Hardware / Wirecutter picks ────────────────────────────
@@ -592,7 +622,8 @@ export const products: Product[] = [
     },
     rating: 4.8,
     warranty: 1,
-    powerUsage: 15
+    powerUsage: 15,
+    image: "https://picsum.photos/seed/laptop31/400/300"
   },
   {
     id: 32,
@@ -611,7 +642,8 @@ export const products: Product[] = [
     },
     rating: 4.5,
     warranty: 1,
-    powerUsage: 25
+    powerUsage: 25,
+    image: "https://picsum.photos/seed/laptop32/400/300"
   },
   {
     id: 33,
@@ -630,7 +662,8 @@ export const products: Product[] = [
     },
     rating: 4.6,
     warranty: 1,
-    powerUsage: 28
+    powerUsage: 28,
+    image: "https://picsum.photos/seed/laptop33/400/300"
   },
   {
     id: 34,
@@ -649,7 +682,8 @@ export const products: Product[] = [
     },
     rating: 4.5,
     warranty: 1,
-    powerUsage: 25
+    powerUsage: 25,
+    image: "https://picsum.photos/seed/laptop34/400/300"
   },
   {
     id: 35,
@@ -668,7 +702,8 @@ export const products: Product[] = [
     },
     rating: 4.7,
     warranty: 1,
-    powerUsage: 130
+    powerUsage: 130,
+    image: "https://picsum.photos/seed/laptop35/400/300"
   },
   {
     id: 36,
@@ -687,7 +722,8 @@ export const products: Product[] = [
     },
     rating: 4.4,
     warranty: 1,
-    powerUsage: 28
+    powerUsage: 28,
+    image: "https://picsum.photos/seed/laptop36/400/300"
   },
   {
     id: 37,
@@ -706,7 +742,8 @@ export const products: Product[] = [
     },
     rating: 4.6,
     warranty: 1,
-    powerUsage: 30
+    powerUsage: 30,
+    image: "https://picsum.photos/seed/laptop37/400/300"
   },
   {
     id: 38,
@@ -725,7 +762,8 @@ export const products: Product[] = [
     },
     rating: 4.6,
     warranty: 1,
-    powerUsage: 25
+    powerUsage: 25,
+    image: "https://picsum.photos/seed/laptop38/400/300"
   },
   {
     id: 39,
@@ -744,7 +782,8 @@ export const products: Product[] = [
     },
     rating: 4.5,
     warranty: 1,
-    powerUsage: 140
+    powerUsage: 140,
+    image: "https://picsum.photos/seed/laptop39/400/300"
   },
   {
     id: 40,
@@ -763,7 +802,8 @@ export const products: Product[] = [
     },
     rating: 4.7,
     warranty: 1,
-    powerUsage: 165
+    powerUsage: 165,
+    image: "https://picsum.photos/seed/laptop40/400/300"
   },
   {
     id: 41,
@@ -782,7 +822,8 @@ export const products: Product[] = [
     },
     rating: 4.8,
     warranty: 2,
-    powerUsage: 175
+    powerUsage: 175,
+    image: "https://picsum.photos/seed/laptop41/400/300"
   },
   {
     id: 42,
@@ -801,6 +842,7 @@ export const products: Product[] = [
     },
     rating: 4.6,
     warranty: 1,
-    powerUsage: 60
+    powerUsage: 60,
+    image: "https://picsum.photos/seed/laptop42/400/300"
   }
 ];

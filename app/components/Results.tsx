@@ -1,14 +1,17 @@
 'use client';
 
 import { RecommendationResult } from '@/app/types';
-import { Star, Monitor } from 'lucide-react';
+import { Star, Monitor, Plus, Check, Trash2 } from 'lucide-react';
 
 interface ResultsProps {
   results: RecommendationResult[];
   budget: number;
+  compareIds: number[];
+  onToggleCompare: (id: number) => void;
+  onDeleteCustom: (id: number) => void;
 }
 
-export default function Results({ results, budget }: ResultsProps) {
+export default function Results({ results, budget, compareIds, onToggleCompare, onDeleteCustom }: ResultsProps) {
   if (results.length === 0) {
     return (
       <div className="border border-border rounded-xl bg-surface p-12 text-center shadow-[0_4px_24px_oklch(0.4_0.02_220/0.05)]">
@@ -48,7 +51,15 @@ export default function Results({ results, budget }: ResultsProps) {
         <p className="text-[10px] font-mono uppercase tracking-widest text-accent mb-4">
           Rekomendasi Utama
         </p>
-        <ProductRow product={top} rank={1} isTop />
+        <ProductRow
+          product={top}
+          rank={1}
+          isTop
+          isSelected={compareIds.includes(top.id)}
+          compareDisabled={compareIds.length >= 3 && !compareIds.includes(top.id)}
+          onToggleCompare={() => onToggleCompare(top.id)}
+          onDeleteCustom={onDeleteCustom}
+        />
       </div>
 
       {/* Alternatives */}
@@ -60,7 +71,14 @@ export default function Results({ results, budget }: ResultsProps) {
           <div className="border border-border rounded-xl bg-surface overflow-hidden divide-y divide-border shadow-[0_2px_12px_oklch(0.4_0.02_220/0.04)]">
             {rest.map((product, index) => (
               <div key={product.id} className="px-5 py-4">
-                <ProductRow product={product} rank={index + 2} />
+                <ProductRow
+                  product={product}
+                  rank={index + 2}
+                  isSelected={compareIds.includes(product.id)}
+                  compareDisabled={compareIds.length >= 3 && !compareIds.includes(product.id)}
+                  onToggleCompare={() => onToggleCompare(product.id)}
+                  onDeleteCustom={onDeleteCustom}
+                />
               </div>
             ))}
           </div>
@@ -80,31 +98,85 @@ function ProductRow({
   product,
   rank,
   isTop = false,
+  isSelected,
+  compareDisabled,
+  onToggleCompare,
+  onDeleteCustom,
 }: {
   product: RecommendationResult;
   rank: number;
   isTop?: boolean;
+  isSelected: boolean;
+  compareDisabled: boolean;
+  onToggleCompare: () => void;
+  onDeleteCustom: (id: number) => void;
 }) {
   return (
-    <div className="grid grid-cols-[40px_1fr_auto] gap-4 items-start">
-      {/* Rank */}
-      <span
-        className={`font-mono font-bold leading-none pt-0.5 select-none ${
-          isTop ? 'text-3xl text-accent' : 'text-2xl text-[oklch(0.78_0.005_220)]'
-        }`}
-      >
-        {String(rank).padStart(2, '0')}
-      </span>
+    <div className="grid grid-cols-[40px_56px_1fr_auto] gap-3 items-start">
+      {/* Rank + compare toggle */}
+      <div className="flex flex-col items-center gap-1.5 pt-0.5">
+        <span
+          className={`font-mono font-bold leading-none select-none ${
+            isTop ? 'text-3xl text-accent' : 'text-2xl text-[oklch(0.78_0.005_220)]'
+          }`}
+        >
+          {String(rank).padStart(2, '0')}
+        </span>
+        <button
+          title={isSelected ? 'Hapus dari perbandingan' : 'Tambah ke perbandingan'}
+          onClick={onToggleCompare}
+          className={`w-6 h-6 rounded flex items-center justify-center border transition-[background,color,border-color] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 ${
+            isSelected
+              ? 'bg-accent border-accent text-accent-fg'
+              : compareDisabled
+              ? 'border-border text-border opacity-40 cursor-not-allowed pointer-events-none'
+              : 'border-border text-muted hover:border-accent hover:text-accent'
+          }`}
+        >
+          {isSelected ? <Check size={11} /> : <Plus size={11} />}
+        </button>
+      </div>
+
+      {/* Thumbnail */}
+      {product.image ? (
+        <img
+          src={product.image}
+          alt={product.name}
+          width={56}
+          height={42}
+          className={`rounded object-cover border border-border shrink-0 ${isTop ? 'w-16 h-12' : 'w-14 h-10'}`}
+        />
+      ) : (
+        <div className={`rounded border border-border bg-[oklch(0.94_0.004_220)] shrink-0 flex items-center justify-center ${isTop ? 'w-16 h-12' : 'w-14 h-10'}`}>
+          <Monitor size={14} className="text-border" />
+        </div>
+      )}
 
       {/* Main info */}
       <div className="min-w-0">
-        <h3
-          className={`font-semibold tracking-tight mb-1 truncate ${
-            isTop ? 'text-base text-foreground' : 'text-sm text-foreground'
-          }`}
-        >
-          {product.name}
-        </h3>
+        <div className="flex items-center gap-1.5 mb-1">
+          <h3
+            className={`font-semibold tracking-tight truncate ${
+              isTop ? 'text-base text-foreground' : 'text-sm text-foreground'
+            }`}
+          >
+            {product.name}
+          </h3>
+          {product.isCustom && (
+            <>
+              <span className="shrink-0 text-[9px] font-mono px-1.5 py-0.5 rounded bg-[oklch(0.94_0.004_220)] text-muted uppercase tracking-wide">
+                Custom
+              </span>
+              <button
+                title="Hapus laptop"
+                onClick={() => onDeleteCustom(product.id)}
+                className="shrink-0 text-muted hover:text-red-500 transition-colors duration-150 focus-visible:outline-none"
+              >
+                <Trash2 size={12} />
+              </button>
+            </>
+          )}
+        </div>
         <p className="text-xs text-muted mb-3 leading-relaxed truncate">
           {product.specs.cpu} · {product.specs.ram} · {product.specs.storage.toUpperCase()}
         </p>
