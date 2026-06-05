@@ -844,5 +844,227 @@ export const products: Product[] = [
     warranty: 1,
     powerUsage: 60,
     image: "https://picsum.photos/seed/laptop42/400/300"
+  },
+
+  // ── Premium 30jt+ ────────────────────────────────────────────────────────
+  {
+    id: 43,
+    name: "Dell XPS 17 9730",
+    price: 32.5,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "mid",
+    specs: {
+      cpu: "Intel Core i9-13900H",
+      ram: "32GB DDR5",
+      storage: "1TB NVMe SSD",
+      vga: "Nvidia RTX 4070 (8GB)",
+      powerUsage: 90
+    },
+    rating: 4.7,
+    warranty: 1,
+    powerUsage: 90,
+    image: "https://picsum.photos/seed/laptop43/400/300"
+  },
+  {
+    id: 44,
+    name: "ASUS ROG Strix SCAR 16 2024",
+    price: 37.0,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "high",
+    specs: {
+      cpu: "Intel Core i9-14900HX",
+      ram: "32GB DDR5",
+      storage: "1TB NVMe SSD",
+      vga: "Nvidia RTX 4080 (12GB)",
+      powerUsage: 175
+    },
+    rating: 4.8,
+    warranty: 2,
+    powerUsage: 175,
+    image: "https://picsum.photos/seed/laptop44/400/300"
+  },
+  {
+    id: 45,
+    name: "Lenovo ThinkPad X1 Extreme Gen 5",
+    price: 39.5,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "mid",
+    specs: {
+      cpu: "Intel Core i9-12900H",
+      ram: "32GB DDR5",
+      storage: "1TB NVMe SSD",
+      vga: "Nvidia RTX 3080 Ti (16GB)",
+      powerUsage: 80
+    },
+    rating: 4.7,
+    warranty: 3,
+    powerUsage: 80,
+    image: "https://picsum.photos/seed/laptop45/400/300"
+  },
+  {
+    id: 46,
+    name: "MacBook Pro M3 Pro 16\"",
+    price: 45.0,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "integrated",
+    specs: {
+      cpu: "Apple M3 Pro",
+      ram: "36GB Unified Memory",
+      storage: "512GB NVMe SSD",
+      vga: "18-Core GPU",
+      powerUsage: 30
+    },
+    rating: 4.9,
+    warranty: 1,
+    powerUsage: 30,
+    image: "https://picsum.photos/seed/laptop46/400/300"
+  },
+  {
+    id: 47,
+    name: "Lenovo ThinkPad P1 Gen 5",
+    price: 52.0,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "mid",
+    specs: {
+      cpu: "Intel Core i9-12900H",
+      ram: "32GB DDR5",
+      storage: "1TB NVMe SSD",
+      vga: "Nvidia RTX 3080 (16GB)",
+      powerUsage: 100
+    },
+    rating: 4.6,
+    warranty: 3,
+    powerUsage: 100,
+    image: "https://picsum.photos/seed/laptop47/400/300"
+  },
+  {
+    id: 48,
+    name: "Razer Blade 16 2024",
+    price: 48.5,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "high",
+    specs: {
+      cpu: "Intel Core i9-14900HX",
+      ram: "32GB DDR5",
+      storage: "2TB NVMe SSD",
+      vga: "Nvidia RTX 4090 (16GB)",
+      powerUsage: 200
+    },
+    rating: 4.8,
+    warranty: 2,
+    powerUsage: 200,
+    image: "https://picsum.photos/seed/laptop48/400/300"
+  },
+  {
+    id: 49,
+    name: "Alienware m18 R2",
+    price: 58.0,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "high",
+    specs: {
+      cpu: "Intel Core i9-13950HX",
+      ram: "32GB DDR5",
+      storage: "1TB NVMe SSD",
+      vga: "Nvidia RTX 4090 (16GB)",
+      powerUsage: 200
+    },
+    rating: 4.7,
+    warranty: 2,
+    powerUsage: 200,
+    image: "https://picsum.photos/seed/laptop49/400/300"
+  },
+  {
+    id: 50,
+    name: "MacBook Pro M3 Max 16\"",
+    price: 67.0,
+    cpu: "high",
+    ram: 64,
+    storage: "nvme",
+    vga: "integrated",
+    specs: {
+      cpu: "Apple M3 Max",
+      ram: "48GB Unified Memory",
+      storage: "1TB NVMe SSD",
+      vga: "40-Core GPU",
+      powerUsage: 30
+    },
+    rating: 5.0,
+    warranty: 1,
+    powerUsage: 30,
+    image: "https://picsum.photos/seed/laptop50/400/300"
+  },
+  {
+    id: 51,
+    name: "MSI Titan GT77 HX",
+    price: 75.0,
+    cpu: "high",
+    ram: 64,
+    storage: "nvme",
+    vga: "high",
+    specs: {
+      cpu: "Intel Core i9-13980HX",
+      ram: "64GB DDR5",
+      storage: "2TB NVMe SSD",
+      vga: "Nvidia RTX 4090 (16GB)",
+      powerUsage: 200
+    },
+    rating: 4.7,
+    warranty: 1,
+    powerUsage: 200,
+    image: "https://picsum.photos/seed/laptop51/400/300"
+  },
+  {
+    id: 52,
+    name: "ASUS ROG Strix Scar 18 2024",
+    price: 82.0,
+    cpu: "high",
+    ram: 32,
+    storage: "nvme",
+    vga: "high",
+    specs: {
+      cpu: "Intel Core i9-14900HX",
+      ram: "32GB DDR5",
+      storage: "2TB NVMe SSD",
+      vga: "Nvidia RTX 4090 (16GB)",
+      powerUsage: 200
+    },
+    rating: 4.9,
+    warranty: 2,
+    powerUsage: 200,
+    image: "https://picsum.photos/seed/laptop52/400/300"
+  },
+  {
+    id: 53,
+    name: "HP ZBook Fury 16 G10",
+    price: 95.0,
+    cpu: "high",
+    ram: 64,
+    storage: "nvme",
+    vga: "high",
+    specs: {
+      cpu: "Intel Core i9-13950HX",
+      ram: "64GB DDR5",
+      storage: "2TB NVMe SSD",
+      vga: "Nvidia RTX 5000 Ada (16GB)",
+      powerUsage: 120
+    },
+    rating: 4.6,
+    warranty: 3,
+    powerUsage: 120,
+    image: "https://picsum.photos/seed/laptop53/400/300"
   }
 ];

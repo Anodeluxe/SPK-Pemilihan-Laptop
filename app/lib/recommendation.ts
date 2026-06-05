@@ -24,7 +24,7 @@ export const calculateScores = (product: Product, budget: number, priority: Prio
 
   const perfScore = (
     cpuScores[product.cpu] +
-    (product.ram / 32) * 100 +         // dinormalisasi terhadap 32 GB (maks dalam dataset)
+    Math.min(100, (product.ram / 64) * 100) + // dinormalisasi terhadap 64 GB (maks dataset)
     storageScores[product.storage] +
     vgaScores[product.vga]
   ) / 4;
@@ -115,7 +115,7 @@ export const searchRecommendation = (
 };
 
 export const getCPUOptions     = () => ['entry', 'mid', 'high'] as const;
-export const getRAMOptions     = () => ['4', '8', '16', '32'] as const;
+export const getRAMOptions     = () => ['4', '8', '16', '32', '64'] as const;
 export const getStorageOptions = () => ['hdd', 'ssd', 'nvme'] as const;
 export const getVGAOptions     = () => ['integrated', 'entry', 'mid', 'high'] as const;
 

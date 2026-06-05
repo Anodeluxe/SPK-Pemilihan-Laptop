@@ -58,16 +58,16 @@ export default function SearchForm({ onSearch }: SearchFormProps) {
             <input
               type="number"
               min="3"
-              max="30"
+              max="100"
               step="0.5"
               value={filters.budget}
               onChange={e => {
                 const val = parseFloat(e.target.value);
                 if (!isNaN(val)) {
-                  setFilters(prev => ({ ...prev, budget: Math.min(30, Math.max(3, val)) }));
+                  setFilters(prev => ({ ...prev, budget: Math.min(100, Math.max(3, val)) }));
                 }
               }}
-              className="w-14 text-sm font-mono font-semibold text-accent text-center bg-transparent border-b border-accent/40 focus-visible:outline-none focus-visible:border-accent transition-colors duration-150"
+              className="w-16 text-sm font-mono font-semibold text-accent text-center bg-transparent border-b border-accent/40 focus-visible:outline-none focus-visible:border-accent transition-colors duration-150"
             />
             <span className="text-sm font-mono">jt</span>
           </div>
@@ -77,7 +77,7 @@ export default function SearchForm({ onSearch }: SearchFormProps) {
           type="range"
           name="budget"
           min="3"
-          max="30"
+          max="100"
           step="0.5"
           value={filters.budget}
           onChange={handleChange}
@@ -85,7 +85,7 @@ export default function SearchForm({ onSearch }: SearchFormProps) {
         />
         <div className="flex justify-between text-[10px] font-mono text-muted mt-1.5">
           <span>Rp 3jt</span>
-          <span>Rp 30jt</span>
+          <span>Rp 100jt</span>
         </div>
       </div>
 
